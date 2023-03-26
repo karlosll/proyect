@@ -1,0 +1,55 @@
+
+h1{
+    color:rgb(29, 113, 238);
+    text-align:center;
+}
+table{
+    width: 500%;
+    font-size: 100%;
+    display: flex;
+    align-items: center;
+}
+button,input {
+    width: 95%;
+    font-size: 100%;
+    height:80px;
+    border-radius:20px;
+    line-height:40px;
+    font-size:20px;
+}
+input{
+     text-align: center;
+}
+.ac {
+    color: rgb(252, 255, 254);
+    width: 100%;
+    font-size: 100%;
+}
+button{
+   position: center;
+    width: 100%;
+    font-size: 100%;
+    border-radius:100px;
+
+    color:rgb(21, 22, 30);
+    
+    background-image: linear-gradient(to right top, #6c96d4, #9b74d6, #cd95df, #8291e3);
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+video{
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+
+}

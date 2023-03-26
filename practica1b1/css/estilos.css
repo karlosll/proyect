@@ -1,0 +1,20 @@
+body{
+    background-color:darkslategray;
+    color:white;
+    font-size:20px;
+     display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+li{
+   list-style: none;
+}
+.regresar{
+  color:tomato;
+  background-color:black;
+}

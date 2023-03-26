@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="../css/nuw.css" rel="stylesheet">
+    </head>
+            
+    <body>
+      <video src="vid.mp4" autoplay muted loop class="background"></video>
+  
+      <h1>CALCULADORA</h1>
+      <button id="invertButton">Dark Mode</button>
+
+    <table>
+      <tr>
+        <td colspan="5"><input id="result" value=""></td>
+      </tr>
+      <tr>
+        <!-- conversion de numero de base 10 a base 2,16,8 -->
+        <td><button onclick="cal.base10_2()">Base 10 a 2</button></td>
+        <td><button >Base 10 a 16</button></td>
+        <td><button >Base 10 a 8</button></td>
+        <!-- conversion de numero de base 2 a base 10,8,16 -->
+        <td><button onclick="cal.base2_10()">Base 2 a 10</button></td>
+        <td><button >Base 2 a 16</button></td>
+      </tr>
+      <tr>
+        <td><button onclick="" >Base 2 a Base 8</button></td>
+        <!-- conversio de numero de base n a base n
+        se ingresan las dos bases  -->
+        <td><button >Base N a base N</button></td>
+      <!-- Se ingresa valor de vuelto < 100
+      Ejemplo: vuelto = 77 respuesta= 1 billete de $50, 1$20, 1$5 y 2$1 -->
+        <td><button onclick="">Dar Vuelto</button></td>
+      <!-- Se ingresa un numero natural < 100
+      Ejemplo: numero = 77 respuesta= LXXVII -->
+        <td><button onclick="">Conversion a Romano</button></td>
+      <!-- Se ingresa la cadena y la subcadena si se encuentra la subcadena
+        dentro de la cadena se retorna la posicion inicial
+      Ejemplo: cadena = "Hola que tal" subcadena="que"
+      respuesta= 5 es la posicion de "que" en la cadena -->
+       <td><button >Buscar cadena</button></td>
+      </tr>
+      <tr>
+        <!-- Se retorna el mayor numero de un arreglo
+           Ejemplo: arreglo=[2,6,3] respuesta= 6 -->
+        <td><button onclick="">Mayor Elemento Arreglo</button></td>
+        <!-- Se retorna el menor numero de un arreglo
+           Ejemplo: arreglo=[2,6,3] respuesta= 2 -->
+        <td><button >Menor Elemento Arreglo</button></td>
+        <!-- Se retorna la posicion de un valor dentro de un arreglo
+           Ejemplo: arreglo=[2,6,3] buscado=6 respuesta= 1 es la posicion de 6 -->
+        <td><button onclick="cal.buscaArreglo()">BuscarArreglo</button></td>
+        <!-- Se elimina el elemento dentro de un arreglo si existe
+           Ejemplo: arreglo=[2,6,3] buscado=6 respuesta= [2,6] -->
+        <td><button >Eliminar Elemento Arreglo</button></td>
+        <!-- Se inserta un valor dentro de un arreglo ordenado
+           Ejemplo: arreglo=[2,3,6] valor=4 respuesta= [2,3,4,6] -->
+        <td><button >Insertar Elemento Arreglo</button></td>
+      </tr>
+      <tr>
+          <!-- Se copia una cadena en un arreglo dado un caracter
+           Ejemplo: cadena="20;30;40" caracter=";" respuesta= [20,30,40] -->
+        <td><button onclick="">Cadena a Arreglo</button></td>
+          <!-- Se copia un arreglo a cadena dado un caracter
+           Ejemplo: arreglo=[20,30,40] caracter=";" respuesta= "20;30;40" -->
+        <td><button >Arreglo a Cadena</button></td>
+          <!-- Se convierte una cadena a tipo oracion
+           Ejemplo: cadena="hola que tal" respuesta= "Hola Que Tal" -->
+        <td><button onclick="">Palabra Oracion</button></td>
+         <!-- Se cuenta la cantidad de "," "." ";" ":" de una frase
+          Ejemplo: cadena="hola,que,estas.haciendo;algo:interesante"
+           respuesta= 2"," 1"." 1";" 1":"  -->
+       <td><button >Cantidad Caracteres especiales</button></td>
+         <!-- dado un numero en una cadena sumar sus digitos
+          mediante cadenas solo cada digito puede convertirlo a entero
+          para sumarlo el recorrido lo hace usando cadenas
+          Ejemplo: numero="123"
+           respuesta= 6  -->
+    
+       <td><button >Sumar digitos con Cadenas</button></td>
+      </tr>
+
+       <tr>
+        <td colspan="5"><button class="ac" >Limpiar</button></td>
+      </tr>
+     </table>
+     <script src="./js/calculadora.js">
+      
+     </script>
+        
+    </body>
+</html>

@@ -1,0 +1,75 @@
+h1{
+    font-family: Verdana, sans-serif;
+    text-align: center;
+    color: #1f6ee4;
+
+}
+video{
+    width: 100%;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    z-index: -1;
+    height: 100%;
+    object-fit: cover;
+}
+table{
+    width: 100%;
+    
+
+
+    margin-top: center;
+    position: center;
+}
+.ac{
+    height: 50px;
+    background-image: linear-gradient(to right top, #0c9ae7, #5477eb, #186fe9, #1fe7eb);
+
+    
+}
+button{
+    color:rgb(21, 22, 30);
+    border-radius:100px;
+    width: 100%;
+    font-size: 100%;
+    height:80px;
+    cursor: pointer;
+    
+    background-image: linear-gradient(to right top, #176be8, #14b3f1, #18bccb, #3e64fe);
+
+}
+button:hover{
+    background-image: linear-gradient(to right top, #1f6ee4, #895ec9, #cc67ee, #cd57b2);
+}
+input{
+    width: 100%;
+    border-radius:100px;
+    width: 100%;
+    font-size: 20px;
+    height:80px;
+    text-align: center;
+}
+#invertButton {
+    background-image: linear-gradient(to right top, #cc35bd, #3e5bda, #8008f1, #d11f54);
+    text-align: center;
+    float: right;
+
+
+    color: #fff;
+    border: none;
+    height: 40px;
+    border-radius: 100px;
+    cursor: pointer;
+    width: 100px;
+}
+#invertButton:hover{
+    background-image: linear-gradient(to right top, #176be8, #14b3f1, #18bccb, #3e64fe);
+
+}
+
+.invertColors {
+    filter: invert(1);
+}
+  
+  
